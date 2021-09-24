@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		.btn-outline-primary {
+			color: #F97300;
+			border-color: #F97300;
+		}
+		.btn-check:checked+.btn-outline-primary {
+			background-color: #F97300;
+			border-color: #F97300
+		}
+		.btn-primary {
+			color: #fff;
+			background-color: #F97300;
+			border-color: #F97300;
+		}
+
+		.navbar{ background:#f97300;}
+		.container { padding-top: 100px; }
+
+		.navbar-brand{ color: #f4f4f4;}
+	</style>
+
+	<title>Apply Z-Factor</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top ">  
+		<div class="container-fluid"> 
+			<a class="navbar-brand" href="#">
+				<img src="https://img.icons8.com/fluency/48/000000/creativity.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+				Z-factor
+			</a>
+		</div>
+	</nav>
+	<div class="container">
+		
+		<form>
+			<div class="mb-3">
+				<label for="fname">First name:</label>
+				<input type="text" id="fname" name="fname">
+			</div>
+			<div class="mb-3">
+				<label for="lname">Last name:</label>
+				<input type="text" id="lname" name="lname">
+			</div>
+			<div class="mb-3">
+				<label for="lage">Age:</label>
+				<input type="number" id="lage" name="lage">
+			</div>
+			<div class="mb-3">
+				<label for="lgender">Gender:</label>
+				<div role="group" aria-label="Basic radio toggle button group">
+					<input type="radio" name="btnradio" id="btnradio1" autocomplete="off" checked>
+					<label class="btn btn-outline-primary" for="btnradio1">Male</label>
+
+					<input type="radio" name="btnradio" id="btnradio2" autocomplete="off">
+					<label class="btn btn-outline-primary" for="btnradio2">Female</label>
+
+				</div>
+			</div>
+			<div class="mb-3">
+				<label for="lhobbies">Hobbies:</label>
+				<select aria-label="Default select example">
+					<option value="1">Singing</option>
+					<option value="2">Dancing</option>
+					<option value="3">Other</option>
+				</select><br>
+			</div>
+			<div>
+				<button>Submit</button>
+			</div>
+		</form>
+	</div>
+</body>
+</html>

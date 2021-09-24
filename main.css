@@ -1,0 +1,26 @@
+.navbar{ background:#f97300;}
+
+.navbar-brand{ color: #f4f4f4;}
+
+.description{
+    position: absolute;
+    top: 30%;
+    margin: auto;
+    padding: 2em;
+    background-size: cover;
+    background-blend-mode: lighten;
+}
+.description h1{
+ color:#F97300 ;
+}
+.description p{
+ color:#666;
+ font-size: 20px;
+ width: 50%;
+ line-height: 1.5;
+}
+.description button{
+ border:1px  solid #F97300;
+ background:#F97300;
+ color:#fff;
+}

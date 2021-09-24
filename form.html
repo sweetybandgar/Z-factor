@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Bootstrap CSS -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<style>
+		.btn-outline-primary {
+			color: #F97300;
+			border-color: #F97300;
+		}
+		.btn-check:checked+.btn-outline-primary {
+			background-color: #F97300;
+			border-color: #F97300
+		}
+		.btn-primary {
+			color: #fff;
+			background-color: #F97300;
+			border-color: #F97300;
+		}
+
+		.navbar{ background:#f97300;}
+		.container { padding-top: 100px; }
+
+		.navbar-brand{ color: #f4f4f4;}
+	</style>
+
+	<title>Apply Z-Factor</title>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg fixed-top ">  
+		<div class="container-fluid"> 
+			<a class="navbar-brand" href="#">
+				<img src="https://img.icons8.com/fluency/48/000000/creativity.png" alt="" width="30" height="24" class="d-inline-block align-text-top">
+				Z-factor
+			</a>
+		</div>
+	</nav>
+	<div class="container">
+		
+		<form>
+			<div class="mb-3">
+				<label for="fname" class="form-label" >First name:</label>
+				<input type="text" id="fname" name="fname">
+			</div>
+			<div class="mb-3">
+				<label for="lname" class="form-label">Last name:</label>
+				<input type="text" id="lname" name="lname">
+			</div>
+			<div class="mb-3">
+				<label for="lage" class="form-label">Age:</label>
+				<input type="number" id="lage" name="lage">
+			</div>
+			<div class="mb-3">
+				<label for="lgender" class="form-label">Gender:</label>
+				<div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+					<label class="btn btn-outline-primary" for="btnradio1">Male</label>
+
+					<input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+					<label class="btn btn-outline-primary" for="btnradio2">Female</label>
+
+				</div>
+			</div>
+			<div class="mb-3">
+				<label for="lhobbies" class="form-label">Hobbies:</label>
+				<select class="form-select" aria-label="Default select example">
+					<option value="1">Singing</option>
+					<option value="2">Dancing</option>
+					<option value="3">Other</option>
+				</select><br>
+			</div>
+			<div class="mb-3">
+				<button class="btn btn-primary">Submit</button>
+			</div>
+		</form>
+	</div>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+</body>
+</html>
